@@ -134,7 +134,94 @@ html,
 body {
   height: 100%;
 }
-.profile-pic{
-  height:42 ;
-  width=:42px;
+@phone :
+
+.container {
+  width: 800px;
+  margin: 50px;
+  @media (max-width: 500px) {
+    width: 100%;
+    margin: auto;
+  }
+  header {
+    width: 100%;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  header nav a {
+    padding: 10px;
+  }
+}
+section {
+  height: 35%;
+  background: lightgrey;
+  padding: 30px;
+}
+section h1 {
+  font-size: 50px;
+}
+section button {
+  font-size: 15px;
+}
+section p {
+  padding: 5px;
+}
+.mid-content {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+.mid-content .left-box {
+  width: 50%;
+}
+.mid-content .left-box h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.mid-content .right-box {
+  width: 50%;
+}
+.mid-content .right-box h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.mid-content .right-box ul {
+  border: 2px  lightgray solid;
+}
+.mid-content .right-box ul li {
+  padding-left: 10px;
+}
+.bottom-content {
+  width: 100%;
+}
+.bottom-content h4 {
+  font-size: 1.4rem;
+}
+.bottom-content .navy {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-content ol {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.bottom-content ol li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+footer {
+  display: flex;
+  margin-top: 40% ;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-left: 40%;
+  padding-top: 30px ;
+  background: darkgrey;
+  color: white;
 }

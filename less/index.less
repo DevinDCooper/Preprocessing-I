@@ -57,3 +57,123 @@ html, body {
     height: 100%;
 }
 
+@backgroundGrey: lightgrey;
+@bg-two:darkgrey;
+@phone: @media(max-width: 500px){
+	width: 100%;
+    margin: auto;
+}
+
+
+.container{
+	width: 800px;
+	margin: 50px; 
+
+	@media(max-width: 500px){
+		width: 100%;
+		
+header{
+	width: 100%;
+
+nav {
+width: 100%;
+display: flex;
+justify-content: flex-end;
+padding: 10px;
+
+a {
+padding: 10px;
+}
+}
+}
+}
+
+section{
+	height: 35%;
+	background: @backgroundGrey;
+padding: 30px;
+
+
+h1{
+font-size: 50px;
+
+}
+button{
+font-size: 15px;
+}
+
+p{
+	padding: 5px;
+}
+}
+
+.mid-content{
+	display: flex;
+padding: 20px;
+width: 100%;
+
+.left-box{
+	
+width: 50%;
+h2{
+font-size: 30px;
+padding-bottom: 10px;
+
+}
+
+}
+.right-box{
+	
+width: 50%;
+h3{
+font-size: 25px;
+padding-bottom: 10px;
+
+}
+ul{
+border: 2px  lightgray solid;
+li{
+padding-left: 10px;
+}
+}
+
+}
+
+}
+
+.bottom-content{
+width: 100%;
+
+
+h4{
+font-size: 1.4rem;
+}
+.navy{
+display: flex;
+justify-content: space-between;
+
+}
+ol{
+display: flex;
+flex-direction: column;
+align-content: space-between;;
+
+
+li{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;;
+}
+}
+}
+
+footer{
+display: flex;
+margin-top: 40% ;
+width: 100%;
+padding-bottom: 40px;
+padding-left: 40%;
+padding-top:30px ;
+background: @bg-two;
+color: white
+}
